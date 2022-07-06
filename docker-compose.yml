@@ -1,0 +1,11 @@
+version: "3.7"
+   
+services:
+  back_prep:
+    container_name: 'back_preprocessing'
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - '8025:8025'
+    restart: always
